@@ -1,0 +1,29 @@
+
+@media (max-width: 768px) {
+    .recipe-card {
+        width: 100%; 
+        max-width: 500px;
+    }
+
+    .recipe-header {
+        flex-direction: column;
+    }
+
+    .recipe-meta {
+        flex-direction: flex;
+        justify-content: center; 
+        
+    }
+    .recipe-meta .f {
+        margin-left: -10px;
+     }
+     
+
+    .recipe-info {
+        padding-bottom: 20px;
+    }
+    .directions-list {
+        padding-left: 0; 
+        margin-left: 0;  
+    }
+}

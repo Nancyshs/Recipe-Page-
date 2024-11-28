@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke; 
+    color: #333;
+}
+/* ******************* recipe-card ******************** */
+.recipe-card {
+    width: 50%; 
+    max-width: 700px; 
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
+}
+/* ******************* upper part ******************** */
+.recipe-header {
+    display: flex;
+}
+/* ***** upper part :left ***** */
+.image-container {
+    flex: 1;
+    overflow: hidden;
+    opacity: 0; 
+    transform: translateX(-100%); 
+    transition: opacity 1s, transform 1s ease-out;
+   
+}
+.recipe-image {
+    width: 100%;
+    object-fit: cover;
+    height: 490px;
+}
+.recipe-image:hover {
+    transform: scale(1.1); 
+    transition: opacity 1s, transform 1s ease-out; 
+}
+/* ***** upper part :right **** */
+.recipe-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    line-height: 25px;
+    padding-top: 30px;
+    background-color: #efeae7;
+    height: 490px;
+    opacity: 0; 
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1s ease-out; 
+}
+.recipe-rating {
+    font-size: 19.2px;
+    color: black; 
+}
+.recipe-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+    font-family: "Dancing Script", cursive;
+    margin-top: 10px;
+}
+/* *********** icons ************ */
+.recipe-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 17.6px;
+    color: #555;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center; 
+}
+.recipe-meta span {
+    display: flex;
+    align-items: center;
+}
+.recipe-meta .f {
+   margin-left: -10px;
+   font-size: 14px;
+}
+/* ******** ingredients ********* */
+.recipe-info h2{
+    font-family: "Cormorant", serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 10px;
+    color: #3b3b3b;
+}
+.ingredients-list {
+    list-style-type: none;
+    margin-top: 10px;
+    font-family: "Cormorant", serif;
+    font-weight: normal;
+}
+.ingredients-list li {
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+/* ******************* lower part ************** */
+.recipe-directions {
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.recipe-directions h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Cormorant", serif;
+    font-weight: normal;
+}
+.directions-list {
+    list-style-type: decimal;
+    margin-top: 20px;
+    padding-left: 20px;
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.directions-list li {
+    margin-bottom: 15px;
+    font-family: "Cormorant", serif;
+    line-height: 19px;
+}
+/* ******************* note box ************** */
+.note-box {
+    margin-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #000;
+    background-color: white;
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.note-box h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: "Cormorant", serif;
+}
+.note-box p {
+    font-size: 11px;
+    color: #555;
+    line-height: 15px;
+}
+
+
